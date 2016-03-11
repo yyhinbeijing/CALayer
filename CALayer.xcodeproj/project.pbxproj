@@ -15,6 +15,9 @@
 		6489A4E11C8EB24F000257EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6489A4DF1C8EB24F000257EF /* LaunchScreen.storyboard */; };
 		6489A4EC1C8EB24F000257EF /* CALayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6489A4EB1C8EB24F000257EF /* CALayerTests.m */; };
 		6489A4F71C8EB24F000257EF /* CALayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6489A4F61C8EB24F000257EF /* CALayerUITests.m */; };
+		6489A5051C8EB574000257EF /* map_item_call.png in Resources */ = {isa = PBXBuildFile; fileRef = 6489A5041C8EB574000257EF /* map_item_call.png */; };
+		6489A5081C8EC297000257EF /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6489A5071C8EC297000257EF /* CustomView.m */; };
+		6489A50B1C8EC2B7000257EF /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6489A50A1C8EC2B7000257EF /* CustomLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		6489A4F21C8EB24F000257EF /* CALayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6489A4F61C8EB24F000257EF /* CALayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerUITests.m; sourceTree = "<group>"; };
 		6489A4F81C8EB24F000257EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6489A5041C8EB574000257EF /* map_item_call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_item_call.png; sourceTree = "<group>"; };
+		6489A5061C8EC297000257EF /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		6489A5071C8EC297000257EF /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		6489A5091C8EC2B7000257EF /* CustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
+		6489A50A1C8EC2B7000257EF /* CustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				6489A4D41C8EB24F000257EF /* AppDelegate.h */,
+				6489A5041C8EB574000257EF /* map_item_call.png */,
 				6489A4D51C8EB24F000257EF /* AppDelegate.m */,
 				6489A4D71C8EB24F000257EF /* ViewController.h */,
 				6489A4D81C8EB24F000257EF /* ViewController.m */,
+				6489A5091C8EC2B7000257EF /* CustomLayer.h */,
+				6489A50A1C8EC2B7000257EF /* CustomLayer.m */,
+				6489A5061C8EC297000257EF /* CustomView.h */,
+				6489A5071C8EC297000257EF /* CustomView.m */,
 				6489A4DA1C8EB24F000257EF /* Main.storyboard */,
 				6489A4DD1C8EB24F000257EF /* Assets.xcassets */,
 				6489A4DF1C8EB24F000257EF /* LaunchScreen.storyboard */,
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					6489A4CD1C8EB24F000257EF = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U2QTD55986;
 					};
 					6489A4E61C8EB24F000257EF = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -246,6 +260,7 @@
 				6489A4E11C8EB24F000257EF /* LaunchScreen.storyboard in Resources */,
 				6489A4DE1C8EB24F000257EF /* Assets.xcassets in Resources */,
 				6489A4DC1C8EB24F000257EF /* Main.storyboard in Resources */,
+				6489A5051C8EB574000257EF /* map_item_call.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6489A50B1C8EC2B7000257EF /* CustomLayer.m in Sources */,
 				6489A4D91C8EB24F000257EF /* ViewController.m in Sources */,
+				6489A5081C8EC297000257EF /* CustomView.m in Sources */,
 				6489A4D61C8EB24F000257EF /* AppDelegate.m in Sources */,
 				6489A4D31C8EB24F000257EF /* main.m in Sources */,
 			);
@@ -411,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CALayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fushike.CALayer;
@@ -422,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CALayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fushike.CALayer;
@@ -496,6 +515,7 @@
 				6489A4FD1C8EB24F000257EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6489A4FE1C8EB24F000257EF /* Build configuration list for PBXNativeTarget "CALayerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +524,7 @@
 				6489A5001C8EB24F000257EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6489A5011C8EB24F000257EF /* Build configuration list for PBXNativeTarget "CALayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +533,7 @@
 				6489A5031C8EB24F000257EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
